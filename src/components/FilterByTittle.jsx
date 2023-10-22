@@ -1,8 +1,9 @@
 import React from 'react';
 
-const FilterByTittle = ({ titleFilter, handleCanche }) => {
+const FilterByTittle = ({ titleFilter, handleChange }) => {
   const handleTittleInput = (ev) => {
     handleChange(ev.target.value);
+    console.log(value);
   };
   return (
     <>
