@@ -1,11 +1,12 @@
 import React from 'react';
 
-const FilmItem = () => {
+const FilmItem = ({ film }) => {
   return (
     <>
-      <ul>
-        <li>hola2</li>
-      </ul>
+      <img src={film.image} alt={film.movie} title={film.title} />
+      <h3>{film.title}</h3>
+      <p>{film.line}</p>
+      <p>{film.year}</p>
     </>
   );
 };

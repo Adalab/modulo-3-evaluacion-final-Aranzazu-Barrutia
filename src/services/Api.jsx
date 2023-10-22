@@ -11,10 +11,9 @@ const getApi = () => {
         id: uuid(),
         title: film.movie,
         year: film.year,
-        poster: film.poster,
+        image: film.poster,
         audio: film.audio,
-        wow: film.current_wow_in_movie,
-        totalWows: film.total_wows_in_movie,
+        line: film.full_line,
       }));
       return cleanData;
     });
