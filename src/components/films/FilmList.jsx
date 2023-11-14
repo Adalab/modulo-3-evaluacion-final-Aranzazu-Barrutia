@@ -8,8 +8,8 @@ const FilmList = ({ films }) => {
 
   const renderFilms = films.map((film) => {
     return (
-      <Link key={film.id} to={'/film/' + film.id}>
-        <li key={film.id}>
+      <Link key={film.id} to={'/film/' + film.id} className="films_link">
+        <li key={film.id} className="films">
           <FilmItem film={film} />
         </li>
       </Link>
@@ -17,7 +17,7 @@ const FilmList = ({ films }) => {
   });
   return (
     <>
-      <ul>{renderFilms}</ul>
+      <ul className="ul_container">{renderFilms}</ul>
     </>
   );
 };

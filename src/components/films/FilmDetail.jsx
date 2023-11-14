@@ -6,12 +6,12 @@ const FilmDetail = ({ film }) => {
     <>
       <section>
         <article>
-          <img src={film.image} alt="poster" />
+          <img className="filmItem_img" src={film.image} alt="poster" />
           <h2>{film.movie}</h2>
-          <h3>{film.line}</h3>
+          <h3 className="filmItem_h3">{film.line}</h3>
           <p>{film.director}</p>
           <p>{film.year}</p>
-          <Link target="_blank" to={film.audio}>
+          <Link className="audio" target="_blank" to={film.audio}>
             WOW! 🔊
           </Link>
         </article>
@@ -20,22 +20,3 @@ const FilmDetail = ({ film }) => {
   );
 };
 export default FilmDetail;
-
-// const UserItem = ({ user }) => {
-//   return (
-//     <>
-//       <a href="#">
-//         <img
-//           className="card__img"
-//           src={user.picture}
-//           alt={user.name}
-//           title={user.name}
-//         />
-//         <h4 className="card__title">{user.name}</h4>
-//         <p className="card__description">{`${user.country} / ${user.gender}`}</p>
-//       </a>
-//     </>
-//   );
-// };
-
-// export default UserItem;

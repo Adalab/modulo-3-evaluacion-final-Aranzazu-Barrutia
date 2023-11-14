@@ -13,18 +13,16 @@ const Filters = ({
   };
   return (
     <>
-      <form action="" onSubmit={handleSubmit}>
-        <section>
-          <FilterByTittle
-            searchTitleFilter={searchTitleFilter}
-            handleChangeTitle={handleChangeTitle}
-          />
-          <FilterByYear
-            yearFilter={yearFilter}
-            handleSelectYear={handleSelectYear}
-            years={years}
-          />
-        </section>
+      <form action="" onSubmit={handleSubmit} className="form">
+        <FilterByTittle
+          searchTitleFilter={searchTitleFilter}
+          handleChangeTitle={handleChangeTitle}
+        />
+        <FilterByYear
+          yearFilter={yearFilter}
+          handleSelectYear={handleSelectYear}
+          years={years}
+        />
       </form>
     </>
   );

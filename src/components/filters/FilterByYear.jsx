@@ -15,18 +15,21 @@ const FilterByYear = ({ yearFilter, handleSelectYear, years }) => {
   };
   return (
     <>
-      <label className="" htmlFor="yearFilter">
-        Año de la película
-        <select
-          name="yearFilter"
-          id="yearFilter"
-          value={yearFilter}
-          onChange={handleSelectSearch}
-        >
-          <option value="all">Todos</option>
-          {renderYear()}
-        </select>
-      </label>
+      <section className="select_section">
+        <label className="select_label" htmlFor="yearFilter">
+          Año de la película
+          <select
+            className="select_year"
+            name="yearFilter"
+            id="yearFilter"
+            value={yearFilter}
+            onChange={handleSelectSearch}
+          >
+            <option value="all">Todos</option>
+            {renderYear()}
+          </select>
+        </label>
+      </section>
     </>
   );
 };

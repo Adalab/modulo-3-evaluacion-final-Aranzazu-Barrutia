@@ -56,11 +56,12 @@ const App = () => {
   return (
     <div>
       <header>
-        <h1>Owen Wilson's "WOW"</h1>
+        <h1 className="h1_title">Owen Wilson's "WOW"</h1>
       </header>
 
       <main>
         <Routes>
+          <Route path="/homepage/" />
           <Route
             path="/"
             element={
@@ -74,7 +75,7 @@ const App = () => {
                 />
 
                 <FilmList films={filteredFilms} />
-                <Link to="/">Back to Home Page</Link>
+                <Link className="back_link">Back to Home Page</Link>
               </>
             }
           ></Route>
@@ -84,7 +85,9 @@ const App = () => {
             element={
               <>
                 <FilmDetail film={filmData} />
-                <Link to="/">Back to films</Link>
+                <Link className="back_link" to="/">
+                  Back to films
+                </Link>
               </>
             }
           ></Route>

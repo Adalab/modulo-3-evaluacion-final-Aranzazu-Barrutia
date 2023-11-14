@@ -6,17 +6,20 @@ const FilterByTittle = ({ searchTitleFilter, handleChangeTitle }) => {
   };
   return (
     <>
-      <label htmlFor="search_title">
-        <input
-          type="text"
-          name="search_title"
-          id="search_title"
-          placeholder="Busca tu peli"
-          value={searchTitleFilter}
-          onChange={handleInputSearch}
-        />
-        Título de la película:
-      </label>
+      <section className="input_section">
+        <label className="input_label" htmlFor="search_title">
+          Título de la película:
+          <input
+            className="input_title"
+            type="text"
+            name="search_title"
+            id="search_title"
+            placeholder="Busca tu peli"
+            value={searchTitleFilter}
+            onChange={handleInputSearch}
+          />
+        </label>
+      </section>
     </>
   );
 };
